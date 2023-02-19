@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="imageBox">
+        <img [src]="'https://crud2-bgaj.onrender.com/'+ taskDetails.image" alt="">
+    </div>
+    <div class="d-flex justify-content-between align-items-baseline my-3">
+        <h1 class="card-title ">{{taskDetails.title}}</h1>
+        <button  mat-raised-button color="warn"         
+        (click)="complete()" >Complete</button>    </div>
+    <p class="card-subtitle mb-2 text-muted">Dead-Line Date : 31/12/2022</p>
+    <hr>
+    <p class="card-text">{{taskDetails.description}}</p>
+</div>
